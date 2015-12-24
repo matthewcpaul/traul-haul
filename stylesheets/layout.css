@@ -1,0 +1,60 @@
+/* line 23, ../sass/layout.scss */
+.pad-vert {
+  padding: 0;
+  margin: 2.85714% 0;
+}
+/* line 15, ../sass/layout.scss */
+.pad-vert :after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 28, ../sass/layout.scss */
+.container {
+  padding: 0;
+  margin: 0 2.85714%;
+}
+@media (min-width: 38rem) {
+  /* line 31, ../sass/layout.scss */
+  .container--thumb :nth-child(even) {
+    margin-right: 0;
+  }
+  /* line 34, ../sass/layout.scss */
+  .container--thumb :nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 65rem) {
+  /* line 39, ../sass/layout.scss */
+  .container--thumb :nth-child(even) {
+    margin-right: 2.85714%;
+  }
+  /* line 42, ../sass/layout.scss */
+  .container--thumb :nth-child(3n+3) {
+    margin-right: 0;
+  }
+  /* line 45, ../sass/layout.scss */
+  .container--thumb :nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+}
+/* line 53, ../sass/layout.scss */
+.container--thumb :last-child {
+  margin-bottom: 0;
+}
+
+/* line 57, ../sass/layout.scss */
+.container-inner {
+  -sgs-span-settings: ("span": 8, "location": 3, "grid": 12, "gutter": 0.5, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 65.71429%;
+  clear: right;
+  float: left;
+  margin-right: 2.85714%;
+}
+
+/* line 60, ../sass/layout.scss */
+.container-grid {
+  max-width: 50rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+@import "singularitygs";
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .folder-album, .hero-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.hero-home {
+  @include aspect-ratio(7, 3);
+  display: block;
+  overflow: hidden;
+  // height: 700px;
+  width: 100%;
+  background-image: url(../images/hero-test.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+.folder-album {
+  @include aspect-ratio(4, 3);
+  @include grid-span(12, 1);
+  background: $grey;
+  margin-bottom: gutter-span();
+
+  @include breakpoint($two-col) {
+    @include grid-span(6, 1);
+  }
+
+  @include breakpoint($three-col) {
+    @include grid-span(4, 1);
+  }
+}
