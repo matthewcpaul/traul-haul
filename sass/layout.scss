@@ -4,7 +4,7 @@
 @include add-gutter(1);
 @include add-gutter(1/2);
 @include sgs-change('output', 'float');
-@include sgs-change('debug', true);
+// @include sgs-change('debug', true);
 
 //Breakpoints//
 $two-col: 38rem;

@@ -46,7 +46,6 @@
 
 /* line 57, ../sass/layout.scss */
 .container-inner {
-  -sgs-span-settings: ("span": 8, "location": 3, "grid": 12, "gutter": 0.5, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
   width: 65.71429%;
   clear: right;
   float: left;
