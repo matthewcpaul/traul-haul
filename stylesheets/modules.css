@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$grey".
-        on line 32 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss
+        on line 26 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss
 
-27:   background-position: top center;
-28: }
-29: .folder-album {
-30:   @include aspect-ratio(4, 3);
-31:   @include grid-span(12, 1);
-32:   background: $grey;
-33:   margin-bottom: gutter-span();
-34: 
-35:   @include breakpoint($two-col) {
-36:     @include grid-span(6, 1);
-37:   }
+21:   display: block;
+22:   overflow: hidden;
+23:   // height: 700px;
+24:   width: 100%;
+25:   background-image: url(../images/hero-test.jpg);
+26:   background: $grey;
+27:   background-size: cover;
+28:   background-position: top center;
+29: 
+30:   @include breakpoint($two-col) {
+31:     @include aspect-ratio(7, 3);
 
 Backtrace:
-/Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss:32
+/Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss:26
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -69,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 32 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss\A \A 27:   background-position: top center;\A 28: }\A 29: .folder-album {\A 30:   @include aspect-ratio(4, 3);\A 31:   @include grid-span(12, 1);\A 32:   background: $grey;\A 33:   margin-bottom: gutter-span();\A 34: \A 35:   @include breakpoint($two-col) {\A 36:     @include grid-span(6, 1);\A 37:   }"; }
+  content: "Error: Undefined variable: \"$grey\".\A         on line 26 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss\A \A 21:   display: block;\A 22:   overflow: hidden;\A 23:   // height: 700px;\A 24:   width: 100%;\A 25:   background-image: url(../images/hero-test.jpg);\A 26:   background: $grey;\A 27:   background-size: cover;\A 28:   background-position: top center;\A 29: \A 30:   @include breakpoint($two-col) {\A 31:     @include aspect-ratio(7, 3);"; }
