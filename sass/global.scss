@@ -1,10 +1,15 @@
 $black: #212121;
 $grey: #9e9e9e;
+$grey-rule: #e0e0e0;
 
 .header {
+  @include breakpoint($two-col) {
+    padding: 2.25rem 0;
+  }
+
   @include group;
   display: block;
-  padding: 2rem 0;
+  padding: 2.25rem 0 1.5rem 0;
 
   & ul {
     margin: 0;
@@ -29,12 +34,33 @@ $grey: #9e9e9e;
   }
 
   & .nav__branding {
-    float: left;
-    padding: 0;
+    @include breakpoint($two-col) {
+      float: left;
+      text-align: left;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    text-align: center;
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid $grey-rule;
 
     & li {
-      float: left;
-      margin-right: 2rem;
+      @include breakpoint($two-col) {
+        float: left;
+        margin: 0 1rem 0 0;
+        padding-bottom: 0;
+      }
+      @include breakpoint($three-col) {
+        margin: 0 2rem 0 0;
+      }
+
+      margin: 0;
+      padding-bottom: .75rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -45,19 +71,21 @@ $grey: #9e9e9e;
       margin-top: 0;
     }
 
-    float: left;
     clear: both;
-    padding: 0;
-    margin-top: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
 
     & li {
       @include breakpoint($two-col) {
         margin-right: 0;
-        margin-left: 2rem;
+        margin: 0 0 0 1rem;
+      }
+      @include breakpoint($three-col) {
+        margin: 0 0 0 2rem;
       }
 
-      float: left;
-      margin-right: 2rem;
+      display: inline-block;
+      margin: 0 .5rem;
     }
   }
 }

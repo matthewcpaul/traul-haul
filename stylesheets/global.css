@@ -1,22 +1,23 @@
 /*
-Error: Undefined mixin 'group'.
-        on line 5 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss, in `group'
-        from line 5 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss
+Error: Undefined mixin 'breakpoint'.
+        on line 6 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss, in `breakpoint'
+        from line 6 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss
 
 1: $black: #212121;
 2: $grey: #9e9e9e;
-3: 
-4: .header {
-5:   @include group;
-6:   display: block;
-7:   padding: 2rem 0;
-8: 
-9:   & ul {
-10:     margin: 0;
+3: $grey-rule: #e0e0e0;
+4: 
+5: .header {
+6:   @include breakpoint($two-col) {
+7:     padding: 2.25rem 0;
+8:   }
+9: 
+10:   @include group;
+11:   display: block;
 
 Backtrace:
-/Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss:5:in `group'
-/Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss:5
+/Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss:6:in `breakpoint'
+/Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss:6
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
@@ -60,20 +61,16 @@ Backtrace:
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:293:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
-/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23:in `<main>'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.9.0/lib/listen/listener.rb:291:in `call'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.9.0/lib/listen/listener.rb:291:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.9.0/lib/listen/listener.rb:255:in `block in _wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.9.0/lib/listen/listener.rb:238:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.9.0/lib/listen/listener.rb:238:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.9.0/lib/listen/listener.rb:327:in `block in _start_wait_thread'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'group'.\A         on line 5 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss, in `group'\A         from line 5 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss\A \A 1: $black: #212121;\A 2: $grey: #9e9e9e;\A 3: \A 4: .header {\A 5:   @include group;\A 6:   display: block;\A 7:   padding: 2rem 0;\A 8: \A 9:   & ul {\A 10:     margin: 0;"; }
+  content: "Error: Undefined mixin 'breakpoint'.\A         on line 6 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss, in `breakpoint'\A         from line 6 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/global.scss\A \A 1: $black: #212121;\A 2: $grey: #9e9e9e;\A 3: $grey-rule: #e0e0e0;\A 4: \A 5: .header {\A 6:   @include breakpoint($two-col) {\A 7:     padding: 2.25rem 0;\A 8:   }\A 9: \A 10:   @include group;\A 11:   display: block;"; }

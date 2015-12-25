@@ -25,7 +25,7 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 65rem) {
+@media (min-width: 60rem) {
   /* line 39, ../sass/layout.scss */
   .container--thumb :nth-child(even) {
     margin-right: 2.85714%;
@@ -43,8 +43,18 @@
 .container--thumb :last-child {
   margin-bottom: 0;
 }
-
 /* line 57, ../sass/layout.scss */
+.container--header {
+  margin: 0;
+}
+@media (min-width: 38rem) {
+  /* line 57, ../sass/layout.scss */
+  .container--header {
+    margin: 0 2.85714%;
+  }
+}
+
+/* line 65, ../sass/layout.scss */
 .container-inner {
   width: 65.71429%;
   clear: right;
@@ -52,7 +62,7 @@
   margin-right: 2.85714%;
 }
 
-/* line 60, ../sass/layout.scss */
+/* line 68, ../sass/layout.scss */
 .container-grid {
   max-width: 50rem;
   margin: 0 auto;

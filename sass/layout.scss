@@ -8,7 +8,7 @@
 
 //Breakpoints//
 $two-col: 38rem;
-$three-col: 65rem;
+$three-col: 60rem;
 
 //Mixins//
 @mixin group {
@@ -53,6 +53,14 @@ $three-col: 65rem;
   &--thumb :last-child {
       margin-bottom: 0;
     }
+
+  &--header {
+    @include breakpoint($two-col) {
+      margin: 0 gutter-span();
+    }
+    
+    margin: 0;
+  }
 }
 .container-inner {
   @include grid-span(8, 3);
