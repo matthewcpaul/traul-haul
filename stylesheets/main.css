@@ -618,16 +618,19 @@ th {
 
 /* line 1, ../sass/typography.scss */
 body {
+  font-family: "sofia-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.75rem;
 }
 
-/* line 5, ../sass/typography.scss */
+/* line 8, ../sass/typography.scss */
 h1 {
   margin: 0;
 }
 
-/* line 8, ../sass/typography.scss */
+/* line 11, ../sass/typography.scss */
 .header {
   line-height: .75rem;
 }
@@ -639,9 +642,8 @@ h1 {
   overflow: hidden;
   width: 100%;
   background-image: url(../images/hero-test.jpg);
-  background: #9e9e9e;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 /* line 4, ../sass/modules.scss */
 .hero-home:before {
@@ -687,7 +689,7 @@ h1 {
   clear: right;
   float: right;
   margin-right: 0;
-  background: #9e9e9e;
+  background: #e0e0e0;
   margin-bottom: 2.85714%;
 }
 /* line 4, ../sass/modules.scss */

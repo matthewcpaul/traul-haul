@@ -1,15 +1,18 @@
 /* line 1, ../sass/typography.scss */
 body {
+  font-family: "sofia-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.75rem;
 }
 
-/* line 5, ../sass/typography.scss */
+/* line 8, ../sass/typography.scss */
 h1 {
   margin: 0;
 }
 
-/* line 8, ../sass/typography.scss */
+/* line 11, ../sass/typography.scss */
 .header {
   line-height: .75rem;
 }

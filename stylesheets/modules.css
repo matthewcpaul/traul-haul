@@ -1,24 +1,28 @@
 /*
-Error: Undefined variable: "$grey".
-        on line 26 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss
+Error: Undefined mixin 'breakpoint'.
+        on line 30 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss, in `breakpoint'
+        from line 30 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss
 
-21:   display: block;
-22:   overflow: hidden;
-23:   // height: 700px;
-24:   width: 100%;
 25:   background-image: url(../images/hero-test.jpg);
-26:   background: $grey;
+26:   // background: $grey;
 27:   background-size: cover;
-28:   background-position: top center;
+28:   background-position: center center;
 29: 
 30:   @include breakpoint($two-col) {
 31:     @include aspect-ratio(7, 3);
+32:   }
+33: }
+34: .folder-album {
+35:   @include aspect-ratio(4, 3);
 
 Backtrace:
-/Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss:26
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss:30:in `breakpoint'
+/Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss:30
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:98:in `block in with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:98:in `with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
@@ -69,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 26 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss\A \A 21:   display: block;\A 22:   overflow: hidden;\A 23:   // height: 700px;\A 24:   width: 100%;\A 25:   background-image: url(../images/hero-test.jpg);\A 26:   background: $grey;\A 27:   background-size: cover;\A 28:   background-position: top center;\A 29: \A 30:   @include breakpoint($two-col) {\A 31:     @include aspect-ratio(7, 3);"; }
+  content: "Error: Undefined mixin 'breakpoint'.\A         on line 30 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss, in `breakpoint'\A         from line 30 of /Users/matthewpaul/Dropbox/Development/traul-haul/sass/modules.scss\A \A 25:   background-image: url(../images/hero-test.jpg);\A 26:   // background: $grey;\A 27:   background-size: cover;\A 28:   background-position: center center;\A 29: \A 30:   @include breakpoint($two-col) {\A 31:     @include aspect-ratio(7, 3);\A 32:   }\A 33: }\A 34: .folder-album {\A 35:   @include aspect-ratio(4, 3);"; }

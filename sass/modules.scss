@@ -23,9 +23,9 @@
   // height: 700px;
   width: 100%;
   background-image: url(../images/hero-test.jpg);
-  background: $grey;
+  // background: $grey;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 
   @include breakpoint($two-col) {
     @include aspect-ratio(7, 3);
@@ -34,7 +34,7 @@
 .folder-album {
   @include aspect-ratio(4, 3);
   @include grid-span(12, 1);
-  background: $grey;
+  background: $grey-rule;
   margin-bottom: gutter-span();
 
   @include breakpoint($two-col) {
